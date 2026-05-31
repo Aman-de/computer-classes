@@ -25,7 +25,6 @@ export default function LandingPage({ onOpenRegister }) {
       subtitle: "Basic Computer Skills & Tally Prime GST",
       duration: "2 Months (80 Hours)",
       standardFee: "₹6,000 (Offline)",
-      registrationFee: "₹500",
       icon: <Calculator size={24} />,
       badge: "Best for Accounts & Office Jobs",
       desc: "Learn everyday office work, prepare calculations, and learn business bookkeeping that companies look for.",
@@ -43,7 +42,6 @@ export default function LandingPage({ onOpenRegister }) {
       subtitle: "Web Development, Python & Data Science",
       duration: "3 Months (120 Hours)",
       standardFee: "₹15,000 (Offline)",
-      registrationFee: "₹500",
       icon: <Code size={24} />,
       badge: "Best for Software & Tech Careers",
       desc: "Learn to build websites, write computer code scripts, analyze business data, and use AI prompts.",
@@ -62,21 +60,21 @@ export default function LandingPage({ onOpenRegister }) {
       name: "Ravi Kumar",
       role: "Office Assistant",
       location: "Patna",
-      text: "I registered for the Beginner Course for Tally and Excel. The lessons are very simple. After paying my ₹500 slot fee, I joined the online class and easily got an office data job.",
+      text: "I registered online for the Beginner Course. The lessons are very simple. After creating my portal account, I joined the online class and easily got an office data job.",
       initials: "RK"
     },
     {
       name: "Shruti Sen",
       role: "Junior Web Developer",
       location: "Indore",
-      text: "Advanced computer classes here are excellent. The React and SQL sections explain everything. The monthly payments (₹3,200/mo) are very cheap and the ISO certificate helps a lot.",
+      text: "Advanced computer classes here are excellent. The React and SQL sections explain everything. The monthly payments are very cheap and the ISO certificate helps a lot.",
       initials: "SS"
     },
     {
       name: "Pawan Verma",
       role: "Accountant Trainee",
       location: "Jaipur",
-      text: "Offline centers in Jaipur charge ₹7,000 for just Tally. Here I registered for ₹500, liked the modules, and upgraded to the full course. Very simple language and practical classes.",
+      text: "Offline centers in Jaipur charge ₹7,000 for just Tally. Here I registered online, liked the modules, and upgraded to the full course. Very simple language and practical classes.",
       initials: "PV"
     }
   ];
@@ -87,12 +85,12 @@ export default function LandingPage({ onOpenRegister }) {
       a: "Each course plan bundles a complete library of related topics. The Beginner Course gives you Word, Excel, PowerPoint, Google Drive, and Tally Prime. The Advanced Course gives you Python coding, Web Development, SQL Database, Pandas Data, and AI Prompt tools. You can watch any lesson, anytime."
     },
     {
-      q: "What do I get by paying the ₹500 registration fee?",
-      a: "The ₹500 fee registers you on our learning portal and locks in your online discount rates. You get your student account credentials and an advisor call. Offline students pay ₹800 at our physical desk."
+      q: "How does the portal registration work?",
+      a: "Registering online creates your student workspace login and locks in your online discount rates. You get your active student credentials, access to the course previews, and an advisor call to guide you."
     },
     {
       q: "How can I pay for the full course?",
-      a: "We offer simple payment options. You can pay the full course price at once for a bigger discount, pay in two halves, or pay a monthly installment of ₹3,200 (Advanced) or ₹1,500 (Beginner) for 3 months. All payments go safely through Razorpay."
+      a: "We offer simple payment options. You can pay the full course price at once for a bigger discount, pay in two halves, or pay a monthly installment plan. All payments go safely through Razorpay."
     },
     {
       q: "Will I get a verified computer certificate?",
@@ -120,7 +118,7 @@ export default function LandingPage({ onOpenRegister }) {
             </li>
             <li>
               <button onClick={() => onOpenRegister('register')} className="btn btn-primary btn-sm">
-                Register (₹500)
+                Register Now
               </button>
             </li>
           </ul>
@@ -136,12 +134,12 @@ export default function LandingPage({ onOpenRegister }) {
         </div>
         <h1>Learn Full Computer Courses & Coding Skills</h1>
         <p className="hero-desc">
-          Job-ready practical classes for office work, accounting, and software development. Secure your portal registration for just ₹500 and start learning.
+          Job-ready practical classes for office work, accounting, and software development. Secure your portal registration today and start learning.
         </p>
         
         <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
           <button onClick={() => onOpenRegister('register')} className="btn btn-primary">
-            Start Registration (₹500) <ArrowRight size={18} />
+            Start Registration <ArrowRight size={18} />
           </button>
           <a href="#courses" className="btn btn-secondary">
             View Course Libraries
@@ -215,7 +213,7 @@ export default function LandingPage({ onOpenRegister }) {
                 className="btn btn-primary btn-full"
                 style={{ marginTop: 'auto' }}
               >
-                Secure Slot Online for {prog.registrationFee}
+                Book Seat Online
               </button>
             </div>
           ))}
