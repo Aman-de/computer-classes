@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LandingPage from './components/LandingPage';
 import RegistrationModal from './components/RegistrationModal';
 import Dashboard from './components/Dashboard';
@@ -15,6 +15,14 @@ function App() {
       return null;
     }
   });
+
+  // Redirect root path to sub-path /computerclasses/
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === '/' || path === '' || path === '/index.html') {
+      window.history.replaceState({}, '', '/computerclasses/');
+    }
+  }, []);
 
   const handleOpenRegister = (tab = 'register', program = 'Beginner Program') => {
     setModalTab(tab);
